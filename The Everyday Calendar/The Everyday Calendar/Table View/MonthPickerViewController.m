@@ -6,10 +6,12 @@
 //
 
 #import "MonthPickerViewController.h"
+#import "TheEverydayCalendar.h"
+#import "MonthViewController.h"
 
 @interface MonthPickerViewController ()
 
-@property NSArray* months;
+@property TheEverydayCalendar* calendar;
 
 @end
 
@@ -21,22 +23,9 @@ static NSString * const reuseIdentifier = @"monthTableViewCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.months = @[
-       @"January",
-       @"February",
-       @"March",
-       @"April",
-       @"May",
-       @"June",
-       @"July",
-       @"August",
-       @"September",
-       @"October",
-       @"November",
-       @"December",
-   ];
-    
+
+    self.calendar = [[TheEverydayCalendar alloc] init];
+
     self.title = @"The Everyday Calendar";
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
 }
@@ -55,7 +44,7 @@ static NSString * const reuseIdentifier = @"monthTableViewCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
-    cell.textLabel.text = [NSString stringWithFormat:@"%@", self.months[indexPath.item]];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@", self.calendar.months[indexPath.item]];
     
     return cell;
 }
@@ -63,11 +52,13 @@ static NSString * const reuseIdentifier = @"monthTableViewCell";
 #pragma mark - Navigation.
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self performSegueWithIdentifier:@"showMonth" sender:[NSString stringWithFormat:@"%@", self.months[indexPath.item]]];
+    [self performSegueWithIdentifier:@"showMonth" sender:[NSString stringWithFormat:@"%@", self.calendar.months[indexPath.item]]];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    [[segue destinationViewController] setTitle:sender];
+    MonthViewController* mpvc = [segue destinationViewController];
+    [mpvc setTitle:sender];
+    mpvc.numberOfDays = [self.calendar.daysInMonth valueForKey:sender].intValue;
 }
 
 @end

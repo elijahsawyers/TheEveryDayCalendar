@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MonthViewController : UICollectionViewController <UICollectionViewDelegateFlowLayout>
 
+@property int numberOfDays;
+
 @end
 
 NS_ASSUME_NONNULL_END

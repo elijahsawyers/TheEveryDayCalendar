@@ -37,7 +37,7 @@ static NSString* const reuseIdentifier = @"monthCollectionViewCell";
 
 
 - (NSInteger)collectionView:(UICollectionView*)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 31;
+    return self.numberOfDays;
 }
 
 - (UICollectionViewCell*)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath*)indexPath {

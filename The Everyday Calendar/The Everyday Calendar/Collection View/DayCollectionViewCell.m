@@ -98,7 +98,7 @@
         [UIView transitionWithView:self.label duration:0.25 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
             self.label.textColor = COMPLETED_BORDER_COLOR;
         } completion:nil];
-        [UIView transitionWithView:self duration:.6 options:UIViewAnimationOptionTransitionFlipFromLeft animations:^{
+        [UIView transitionWithView:self duration:.5 options:UIViewAnimationOptionTransitionFlipFromLeft animations:^{
             self.layer.transform = CATransform3DRotate(CATransform3DIdentity, 360 * M_PI / 180, 0, 1, 0);
         } completion:^(BOOL finished){
             if (finished) {

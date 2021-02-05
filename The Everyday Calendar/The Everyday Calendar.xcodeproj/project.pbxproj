@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E707710225CDE3F300433EC8 /* TheEverydayCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = E707710125CDE3F300433EC8 /* TheEverydayCalendar.m */; };
 		E77A8AC125CA35C800B0BD4E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E77A8AC025CA35C800B0BD4E /* AppDelegate.m */; };
 		E77A8AC425CA35C800B0BD4E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E77A8AC325CA35C800B0BD4E /* SceneDelegate.m */; };
 		E77A8ACA25CA35C800B0BD4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E77A8AC825CA35C800B0BD4E /* Main.storyboard */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E707710025CDE3F300433EC8 /* TheEverydayCalendar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheEverydayCalendar.h; sourceTree = "<group>"; };
+		E707710125CDE3F300433EC8 /* TheEverydayCalendar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheEverydayCalendar.m; sourceTree = "<group>"; };
 		E77A8ABC25CA35C800B0BD4E /* The Everyday Calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Everyday Calendar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E77A8ABF25CA35C800B0BD4E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E77A8AC025CA35C800B0BD4E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -70,6 +73,8 @@
 				E77A8AFE25CC696300B0BD4E /* Supporting Files */,
 				E77A8B0025CC697100B0BD4E /* Collection View */,
 				E77A8B0325CC697F00B0BD4E /* Table View */,
+				E707710025CDE3F300433EC8 /* TheEverydayCalendar.h */,
+				E707710125CDE3F300433EC8 /* TheEverydayCalendar.m */,
 				E77A8AC825CA35C800B0BD4E /* Main.storyboard */,
 				E77A8ACB25CA35C900B0BD4E /* Assets.xcassets */,
 				E77A8ACD25CA35C900B0BD4E /* LaunchScreen.storyboard */,
@@ -180,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E77A8AC125CA35C800B0BD4E /* AppDelegate.m in Sources */,
+				E707710225CDE3F300433EC8 /* TheEverydayCalendar.m in Sources */,
 				E77A8AF725CC67A000B0BD4E /* MonthViewController.m in Sources */,
 				E77A8AF225CC5F4100B0BD4E /* MonthPickerViewController.m in Sources */,
 				E77A8AD225CA35C900B0BD4E /* main.m in Sources */,
