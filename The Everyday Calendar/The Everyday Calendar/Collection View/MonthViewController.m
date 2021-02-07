@@ -45,6 +45,9 @@ static NSString* const reuseIdentifier = @"monthCollectionViewCell";
     
     // Configure the cell.
     cell.dayOfTheMonth = (int)indexPath.item + 1;
+    cell.month = self.month;
+    cell.completed = [[self.calendar.daysCompletedInMonth valueForKey:self.month][(int)indexPath.item] boolValue];
+    cell.calendar = self.calendar;
     
     return cell;
 }

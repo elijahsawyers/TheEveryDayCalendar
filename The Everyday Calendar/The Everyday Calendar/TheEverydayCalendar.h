@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property NSArray* months;
 @property NSDictionary<NSString*, NSNumber*>* daysInMonth;
+@property NSMutableDictionary<NSString*, NSMutableArray*>* daysCompletedInMonth;
 
 @end
 

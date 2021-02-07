@@ -55,7 +55,6 @@
     self.layer.shadowOpacity = 0;
     self.layer.shadowOffset = CGSizeMake(0.0, 0.0);
     self.layer.shadowRadius = 10;
-    self.completed = NO;
     [self createLabel];
 }
 
@@ -94,6 +93,10 @@
 
 - (void)setCompleted:(BOOL)newCompleted {
     _completed = newCompleted;
+    [[self.calendar.daysCompletedInMonth valueForKey:self.month] setObject:[NSNumber numberWithBool:newCompleted] atIndexedSubscript:self.dayOfTheMonth-1];
+    if (!self.calendar && newCompleted) {
+        self.layer.shadowOpacity = 1;
+    }
     if (newCompleted) {
         [UIView transitionWithView:self.label duration:0.25 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
             self.label.textColor = COMPLETED_BORDER_COLOR;

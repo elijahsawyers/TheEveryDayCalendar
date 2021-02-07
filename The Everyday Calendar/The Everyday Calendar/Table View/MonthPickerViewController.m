@@ -37,7 +37,7 @@ static NSString * const reuseIdentifier = @"monthTableViewCell";
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 12;
+    return [self.calendar.months count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -59,6 +59,8 @@ static NSString * const reuseIdentifier = @"monthTableViewCell";
     MonthViewController* mpvc = [segue destinationViewController];
     [mpvc setTitle:sender];
     mpvc.numberOfDays = [self.calendar.daysInMonth valueForKey:sender].intValue;
+    mpvc.calendar = self.calendar;
+    mpvc.month = sender;
 }
 
 @end

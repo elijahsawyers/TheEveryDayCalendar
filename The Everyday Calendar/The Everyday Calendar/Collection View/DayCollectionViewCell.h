@@ -6,13 +6,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TheEverydayCalendar.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DayCollectionViewCell : UICollectionViewCell
 
+@property NSString* month;
 @property int dayOfTheMonth;
 @property BOOL completed;
+@property TheEverydayCalendar* calendar;
 
 @end
 
