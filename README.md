@@ -11,11 +11,30 @@
 
 ## Demo
 
-TO-DO
+<p align="center">
+  <img width="250" src="https://github.com/elijahsawyers/TheEverydayCalendar/raw/master/Assets/tableView.png"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img width="250" src="https://github.com/elijahsawyers/TheEverydayCalendar/raw/master/Assets/collectionView.png"/>
+</p>
 
 ## How To Use
 
-TO-DO
+First, make sure that you have Xcode installed. If you don't, you can [download](https://apps.apple.com/us/app/xcode/id497799835?mt=12) it for free on the Mac App Store.
+
+Next, clone the repository.
+
+```sh
+git clone https://github.com/elijahsawyers/TheEverydayCalendar.git
+```
+
+After cloning the repository, open the Xcode project file.
+
+```sh
+cd path/to/cloned/repo
+open TheEveryDayCalendar/The\ Everyday\ Calendar/The\ Everyday\ Calendar.xcodeproj
+```
+
+Once you have the project opened up in Xcode, simply run the application with ```⌘ + R```.
 
 ## License
 
