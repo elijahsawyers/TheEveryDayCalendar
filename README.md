@@ -1,5 +1,5 @@
 <h1 align="center">The Every Day Calendar</h1>
-<p align="center">An iOS application of The Every Day Calendar by Simone Giertz🗓<p>
+<p align="center">An iOS application of <a href="https://www.kickstarter.com/projects/simonegiertz/the-every-day-calendar)">The Every Day Calendar</a> by Simone Giertz🗓<p>
 <hr>
 <p align="center">
   <a href="#demo">Demo</a> |
